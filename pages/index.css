@@ -1,0 +1,232 @@
+@import url("../vendor/normalize.css");
+
+@import url("../vendor/inter_web/inter.css");
+
+@font-face {
+  font-family: Inter;
+  src: url("../vendor/inter_web/Inter-Regular.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../vendor/inter_web/Inter-Medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../vendor/inter_web/Inter-Black.woff");
+  font-weight: 900;
+}
+
+.page {
+  background-color: black;
+  color: white;
+  font-family: Inter;
+}
+
+.page__section {
+  max-width: 880px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  padding-top: 45px;
+}
+
+.header__logo {
+  height: 33px;
+  width: 173px;
+  padding-bottom: 41px;
+}
+
+.header__border {
+  border-width: 1px;
+  opacity: 0.7;
+}
+
+.profile {
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+}
+
+.profile__avatar {
+  border-radius: 50%;
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  background-position: center;
+  margin-right: 24px;
+}
+
+.profile__info {
+  display: grid;
+  grid-template-areas: "title button" "description description";
+  grid-template-columns: minmax(auto, 373px) auto;
+  align-items: baseline;
+  gap: 16px 18px;
+}
+
+.profile__user {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 48px;
+  grid-area: title;
+  margin: 0;
+}
+
+.profile__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  grid-area: description;
+  margin: 0;
+}
+
+.profile__edit-button {
+  background: transparent url("../images/edit-button.png") center no-repeat;
+  height: 24px;
+  width: 24px;
+  grid-area: button;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+.profile__edit-button:hover {
+  opacity: 0.6;
+}
+
+.profile__add-button {
+  background: transparent url("../images/add-button.png") center no-repeat;
+  height: 50px;
+  width: 150px;
+  margin-left: auto;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 282px 282px 282px;
+  gap: 20px 17px;
+  margin-top: 47px;
+  margin-bottom: 67px;
+}
+
+.card__yosemite {
+  width: 282px;
+  height: 361px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.card__lake-louise {
+  width: 282px;
+  height: 361px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.card__bald-mountains {
+  width: 282px;
+  height: 361px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.card__latemar {
+  width: 282px;
+  height: 361px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.card__vanoise {
+  width: 282px;
+  height: 361px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.card__lago {
+  width: 282px;
+  height: 361px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.card__image {
+  width: 282px;
+  height: 282px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card__content {
+  display: grid;
+  grid-template-columns: 240px 41px;
+  grid-template-areas: "title button";
+  align-items: center;
+}
+
+.card__title {
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  grid-area: title;
+}
+
+.card__like-button {
+  background: transparent url("../images/heart.png") center no-repeat;
+  width: 21px;
+  height: 18px;
+  border-style: none;
+  padding-bottom: 30px;
+  grid-area: button;
+}
+
+.card__like-button:hover {
+  opacity: 0.6;
+}
+
+.footer {
+  margin-bottom: 60px;
+  color: #545454;
+  font-family: Inter;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+}
