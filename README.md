@@ -1,21 +1,24 @@
 # Project 3: Around The U.S.
 
-### Overview  
+### Overview
 
-* Intro  
-* Figma  
-* Images  
-  
+- Intro
+- Images
+- Link to site on GitHub Pages
+
 **Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+
+This project is the third in the Software Engineer program and it's focus is responsive design.
+
+Main features:
+
+- Responsive design
+- Grid layout
+- Media Queries
+- Positioning
+
+**Images**
+
+[Desktop Resolution](images/6604F02D-F72B-48CF-BB25-2340B9151A52.jpeg)
+
+[Mobile Resolution](images/7F1CDC2D-4D2D-49C4-BD47-244B94342ECE_4_5005_c.jpeg)
