@@ -40,12 +40,12 @@
 }
 
 .profile__edit-button {
-  background: transparent url("../images/edit-button.png") center no-repeat;
+  background: transparent url("../images/edit-button.svg") center no-repeat;
   height: 24px;
   width: 24px;
+  background-size: 24px 24px;
   grid-area: button;
   border: 1px solid white;
-  border-radius: 2px;
   align-self: center;
 }
 
@@ -55,9 +55,10 @@
 }
 
 .profile__add-button {
-  background: transparent url("../images/add-button.png") center no-repeat;
+  background: transparent url("../images/add-button.svg") center no-repeat;
   height: 50px;
   width: 150px;
+  background-size: 22px 22px;
   border: 2px solid white;
   border-radius: 2px;
   margin: 35px 0 35px auto;
@@ -82,7 +83,7 @@
   .profile__info {
     grid-template-columns: 10fr 1fr;
     grid-column-gap: 10px;
-    margin-top: 26.25px;
+    margin-top: 30px;
   }
 
   .profile__description {
@@ -102,7 +103,7 @@
   .profile__edit-button {
     width: 18px;
     height: 18px;
-    grid-column-gap: 10px;
+    background-size: 18px 18px;
   }
 
   .profile__add-button {
