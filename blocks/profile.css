@@ -18,7 +18,7 @@
   grid-template-areas: "title button" "description description";
   grid-template-columns: 14fr 1fr;
   align-items: baseline;
-  gap: 16px 18px;
+  gap: 8px 18px;
 }
 
 .profile__user {
@@ -43,7 +43,7 @@
   background: transparent url("../images/edit-button.svg") center no-repeat;
   height: 24px;
   width: 24px;
-  background-size: 24px 24px;
+  background-size: 10px 10px;
   grid-area: button;
   border: 1px solid white;
   align-self: center;
@@ -103,12 +103,13 @@
   .profile__edit-button {
     width: 18px;
     height: 18px;
-    background-size: 18px 18px;
+    background-size: 7.5px 7.5px;
   }
 
   .profile__add-button {
     margin: 36px 19px;
     width: 282px;
+    background-size: 16px 16px;
   }
 }
 
