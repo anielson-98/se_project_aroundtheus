@@ -28,3 +28,23 @@ const initialCards = [
     link: "images/lago-di-braies.jpg",
   },
 ];
+
+let editButton = document.querySelector(".profile__edit-button");
+let profileEdit = document.querySelector(".modal");
+let closeButton = document.querySelector(".modal__close-button");
+
+function openModal() {
+  profileEdit.classList.add("modal_opened");
+}
+
+function closeModal() {
+  profileEdit.classList.remove("modal_opened");
+}
+
+editButton.addEventListener("click", (evt) => {
+  openModal();
+});
+
+closeButton.addEventListener("click", (evt) => {
+  closeModal();
+});
