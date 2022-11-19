@@ -1,15 +1,16 @@
-.cards {
+.cards__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, 282px);
-  gap: 20px 17px;
-  margin-top: 47px;
-  margin-bottom: 67px;
-  padding: 0;
   justify-content: center;
+  grid-gap: 20px 17px;
+  list-style-type: none;
+  margin: 72px auto 67px auto;
+  padding: 0;
+  width: 880px;
 }
 
-@media screen and (max-width: 589px) {
-  .cards {
-    margin: 0 auto 48px auto;
+@media screen and (max-width: 918px) {
+  .cards__list {
+    max-width: calc(100% - 4.3%);
   }
 }
