@@ -29,13 +29,27 @@ const initialCards = [
   },
 ];
 
-let editButton = document.querySelector(".profile__edit-button");
-let profileEdit = document.querySelector(".modal");
-let closeButton = document.querySelector(".modal__close-button");
+const editButton = document.querySelector(".profile__edit-button");
+const profileEdit = document.querySelector(".modal");
+const profileModalCloseButton = document.querySelector(".modal__close-button");
 
 function openModal() {
   profileEdit.classList.add("modal_opened");
 }
+// Find profile elements
+const profileName = document.querySelector(".profile__user");
+
+const profileDescription = document.querySelector(".profile__description");
+
+// Find form input elements
+const profileNameInput = document.querySelector("#name");
+
+const formInputDescription = document.querySelector("#description");
+
+// Fill the "Name" and "About me" fields with the values displayed on the page
+profileNameInput.value = profileName.textContent;
+
+formInputDescription.value = profileDescription.textContent;
 
 function closeModal() {
   profileEdit.classList.remove("modal_opened");
@@ -45,27 +59,12 @@ editButton.addEventListener("click", (evt) => {
   openModal();
 });
 
-closeButton.addEventListener("click", (evt) => {
+profileModalCloseButton.addEventListener("click", (evt) => {
   closeModal();
 });
 
-// Find profile elements
-const profileName = document.querySelector(".profile__user");
-
-const profileDescription = document.querySelector(".profile__description");
-
-// Find form input elements
-const formInputName = document.querySelector("#name");
-
-const formInputDescription = document.querySelector("#description");
-
-// Fill the "Name" and "About me" fields with the values displayed on the page
-formInputName.value = profileName.textContent;
-
-formInputDescription.value = profileDescription.textContent;
-
 // Find the form in the DOM
-const profileFormElement = document.querySelector(".modal__form");
+const profileFormElement = profileEdit.querySelector(".modal__form");
 
 // Form submission handler
 function handleProfileFormSubmit(e) {
@@ -78,7 +77,7 @@ function handleProfileFormSubmit(e) {
   profileDescription.textContent = formInputDescription.value;
 
   // Close the modal
-  toggleModal();
+  closeModal();
 }
 
 // Connect the handler to the form and watch for the submit event
@@ -118,3 +117,11 @@ function createCardsList(card) {
 
 // Create cards list
 initialCards.forEach(createCardsList);
+
+formElement.addEventListener("submit", handleProfileFormSubmit);
+editButton.addEventListener("click", function () {
+  toggleModal();
+  formInputName.value = profileName.textContent;
+  formInputDescription.value = profileDescription.textContent;
+});
+profileModalCloseButton.addEventListener("click", toggleModal);
